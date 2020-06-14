@@ -11,7 +11,12 @@ app.get("/crash", async (req, res) => {
     const { PrismaClient } = require('@prisma/client')
     const prisma = new PrismaClient();
 
-    let customers = await prisma.customer.findMany();
+    try {
+        let customers = await prisma.customer.findMany();
+    } catch (e) {
+        console.error("exception ", e);
+    }
+
 
     res.send('crash');
 })
