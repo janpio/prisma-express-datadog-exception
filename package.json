@@ -1,0 +1,27 @@
+{
+  "name": "prisma-express-datadog-exception",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janpio/prisma-express-datadog-exception.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/janpio/prisma-express-datadog-exception/issues"
+  },
+  "homepage": "https://github.com/janpio/prisma-express-datadog-exception#readme",
+  "dependencies": {
+    "@prisma/client": "^2.0.0",
+    "dd-trace": "^0.21.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@prisma/cli": "^2.0.0"
+  }
+}
